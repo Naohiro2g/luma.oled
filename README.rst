@@ -13,6 +13,7 @@ OLED Pin   Name   Remarks      RPi Function
 6 Blue      DC     Data/Command GPIO 9  (*) was 24
 7 Purple    CS     Chip Select  GPIO 8 (CE0)
 ========== ====== ============ ======== ==============
+
 *: exchangeable
 
 from [Hardware](https://github.com/Naohiro2g/luma.oled/blob/master/doc/hardware.rst)
