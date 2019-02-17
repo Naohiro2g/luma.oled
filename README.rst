@@ -1,6 +1,7 @@
 The document https://ssd1306.readthedocs.io/en/latest/
 
-### SPI connection of my display module (VCC and GND was reversed !)
+SPI connection of my display module (VCC and GND was reversed !)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ========== ====== ============ ====================
 OLED Pin   Name   Remarks      RPi Function
@@ -18,7 +19,8 @@ OLED Pin   Name   Remarks      RPi Function
 Modified from [Hardware](https://github.com/Naohiro2g/luma.oled/blob/master/doc/hardware.rst)
 
 
-### Wiring to Rpi Pins
+Wiring to Rpi Pins
+^^^^^^^^^^^^^^^^^^
 
 ======= ===== ===== ======= 
 Left    BCM   BCM   Right
