@@ -20,7 +20,7 @@ from [Hardware](https://github.com/Naohiro2g/luma.oled/blob/master/doc/hardware.
 
 Rpi Pins
 ======= ===== ===== ======= 
-        Left  Right   
+Left    BCM   BCM   Right
 ======= ===== ===== =======
 Red     3.3   ---
 Yellow  10    GND   Brown
