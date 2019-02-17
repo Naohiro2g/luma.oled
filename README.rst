@@ -1,16 +1,18 @@
-SPI connection
+The document https://ssd1306.readthedocs.io/en/latest/
 
+SPI connection for my device (VCC and GND was reversed !)
+========== ====== ============ ==============
+OLED Pin   Name   Remarks      RPi Function
+========== ====== ============ ==============
+1 Brown     GND    Ground       GND
+2 Red       VCC    +3.3V Power  3V3
+3 Orange    D0     Clock        GPIO 11 (SCLK)
+4 Yellow    D1     MOSI         GPIO 10 (MOSI)
+5 Green     RST    Reset        GPIO 25 (*)
+6 Blue      DC     Data/Command GPIO 9  (*) was 24
+7 Purple    CS     Chip Select  GPIO 8 (CE0)
 ========== ====== ============ ======== ==============
-OLED Pin   Name   Remarks      RPi Pin  RPi Function
-========== ====== ============ ======== ==============
-1          VCC    +3.3V Power  P01-17   3V3
-2          GND    Ground       P01-20   GND
-3          D0     Clock        P01-23   GPIO 11 (SCLK)
-4          D1     MOSI         P01-19   GPIO 10 (MOSI)
-5          RST    Reset        P01-22   GPIO 25
-6          DC     Data/Command P01-18   GPIO 24
-7          CS     Chip Select  P01-24   GPIO 8 (CE0)
-========== ====== ============ ======== ==============
+*: exchangeable
 
 from [Hardware](https://github.com/Naohiro2g/luma.oled/blob/master/doc/hardware.rst)
 
