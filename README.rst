@@ -1,6 +1,7 @@
 The document https://ssd1306.readthedocs.io/en/latest/
 
 SPI connection for my device (VCC and GND was reversed !)
+
 ========== ====== ============ ==============
 OLED Pin   Name   Remarks      RPi Function
 ========== ====== ============ ==============
