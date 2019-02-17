@@ -5,13 +5,13 @@ SPI connection for my device (VCC and GND was reversed !)
 ========== ====== ============ ====================
 OLED Pin   Name   Remarks      RPi Function
 ========== ====== ============ ====================
-1 Brown     GND    Ground       GND
-2 Red       VCC    +3.3V Power  3V3
-3 Orange    D0     Clock        GPIO 11 (SCLK)
-4 Yellow    D1     MOSI         GPIO 10 (MOSI)
-5 Green     RST    Reset        GPIO 25 (*)
-6 Blue      DC     Data/Command GPIO 9  (*) was 24
-7 Purple    CS     Chip Select  GPIO 8 (CE0)
+1 Brown    GND    Ground       GND
+2 Red      VCC    +3.3V Power  3V3
+3 Orange   D0     Clock        GPIO 11 (SCLK)
+4 Yellow   D1     MOSI         GPIO 10 (MOSI)
+5 Green    RST    Reset        GPIO 25 (*)
+6 Blue     DC     Data/Command GPIO 9  (*) was 24
+7 Purple   CS     Chip Select  GPIO 8 (CE0)
 ========== ====== ============ ====================
 
 *: exchangeable
