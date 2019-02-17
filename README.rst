@@ -18,8 +18,15 @@ OLED Pin   Name   Remarks      RPi Function
 
 from [Hardware](https://github.com/Naohiro2g/luma.oled/blob/master/doc/hardware.rst)
 
-
-
+Rpi Pins
+======= ===== ===== ======= 
+        Left  Right   
+======= ===== ===== =======
+Red     3.3   ---
+Yellow  10    GND   Brown
+Blue    9     25    Green
+Orange  11    8     Purple
+======= ===== ===== =======
 
 `luma.core <https://github.com/rm-hull/luma.core>`__ **|** 
 `luma.docs <https://github.com/rm-hull/luma.docs>`__ **|** 
