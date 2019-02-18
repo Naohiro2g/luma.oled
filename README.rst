@@ -3,23 +3,32 @@ Read the great document at https://ssd1306.readthedocs.io/en/latest/
 Installation
 ^^^^^^^^^^^^
 
+```
 sudo apt-get install libjpeg62-turbo-dev libjpeg-dev
 sudo -H pip3 install --upgrade luma.oled
+```
 
 8x8 Japanese font - misaki font
 ^^^^^^^^^^^^^^^^^
+
+```
+
 http://littlelimit.net/misaki.htm
 
 * font installation
+
+```
 cd luma.examples/examples
 mkdir misakifont
 cd misakifont
 wget http://littlelimit.net/arc/misaki/misaki_ttf_2019-02-03a.zip
 unzip misaki_ttf_2019-02-03a.zip
+```
 
 Demo drive
 ^^^^^^^^^^
 
+```
 git clone https://github.com/Naohiro2g/luma.examples.git
 cd luma.examples/examples
 
@@ -34,8 +43,8 @@ python3 bounce.py --interface spi
 
 # bench marking     approx. 80FPS
 python3 perfloop.py --interface spi
-#see https://github.com/rm-hull/luma.oled/wiki/Usage-&-Benchmarking#096-spi-oled---ssd1306
-
+# see https://github.com/rm-hull/luma.oled/wiki/Usage-&-Benchmarking#096-spi-oled---ssd1306
+```
 
 
 SPI connection of my display module (VCC and GND was reversed !)
