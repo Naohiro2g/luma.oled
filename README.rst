@@ -1,4 +1,10 @@
-Read the great document at https://ssd1306.readthedocs.io/en/latest/
+Python library for Raspberry Pi and SDD1306 connected via I2C/SPI
+--------------------------------------------------------------------------------------------
+- Forked from rm-hull/luma.oled <https://github.com/rm-hull/luma.oled> .
+- Examples of Japanese font "misaki font" for OLED Display (1.3 inch / 128 x 64) included.
+- Luma's work is highly versatile. Python 2 or 3, I2C or SPI, Raspberry Pi or Linux-based SBC.
+- Read the great document at https://ssd1306.readthedocs.io/en/ 
+
 
 Installation
 ^^^^^^^^^^^^
@@ -8,13 +14,11 @@ Installation
     sudo -H pip3 install --upgrade luma.oled
 
 
-8x8 Japanese font - misaki font
+Nice Japanese font - misaki font and installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+misaki font is 8 x 8 Truetype font in almost in 7 x 7 area so that it has high readability in small space.
 http://littlelimit.net/misaki.htm
 
-Font installation
-^^^^^^^^^^^^^^^^^
 ::
 
     cd luma.examples/examples
@@ -24,8 +28,8 @@ Font installation
     unzip misaki_ttf_2019-02-03a.zip
 
 
-Test drive
-^^^^^^^^^^
+Test drive from luma.examples
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ::
 
     git clone https://github.com/Naohiro2g/luma.examples.git
@@ -33,6 +37,7 @@ Test drive
 
     # misaki font
     python3 crawl-misaki.py --interface spi
+
     # moving cube in 3D
     python3 3d_box.py --interface spi
     # space invaders!
@@ -45,7 +50,7 @@ Test drive
     # see https://github.com/rm-hull/luma.oled/wiki/Usage-&-Benchmarking#096-spi-oled---ssd1306
 
 
-SPI connection of my display module (VCC and GND was reversed !)
+SPI connection to my display module (VCC and GND was reversed !)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ========== ====== ============ ====================
@@ -59,8 +64,11 @@ OLED Pin   Name   Remarks      RPi Function
 6 Blue     DC     Data/Command GPIO 24 (*)
 7 Purple   CS     Chip Select  GPIO 8 (CE0)
 ========== ====== ============ ====================
+`*`: exchangeable with any GPIO pins by command-line options below::
 
-*: exchangeable
+    --bcm-reset 20
+    --bcm-data-command 21
+
 Modified from [Hardware](https://github.com/Naohiro2g/luma.oled/blob/master/doc/hardware.rst)
 
 Wiring to Rpi Pins
