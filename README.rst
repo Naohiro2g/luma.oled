@@ -32,6 +32,11 @@ python3 invaders.py --interface spi
 #bouncing balls with FPS
 python3 bounce.py --interface spi
 
+# bench marking     approx. 80FPS
+python3 perfloop.py --interface spi
+#see https://github.com/rm-hull/luma.oled/wiki/Usage-&-Benchmarking#096-spi-oled---ssd1306
+
+
 
 SPI connection of my display module (VCC and GND was reversed !)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
