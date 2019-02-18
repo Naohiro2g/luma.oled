@@ -2,7 +2,7 @@ Read the great document at https://ssd1306.readthedocs.io/en/latest/
 
 Installation
 ^^^^^^^^^^^^
-..
+::
 
     sudo apt-get install libjpeg62-turbo-dev libjpeg-dev
     sudo -H pip3 install --upgrade luma.oled
@@ -15,7 +15,7 @@ http://littlelimit.net/misaki.htm
 
 Font installation
 ^^^^^^^^^^^^^^^^^
-..
+::
 
     cd luma.examples/examples
     mkdir misakifont
@@ -26,11 +26,11 @@ Font installation
 
 Test drive
 ^^^^^^^^^^
-:
+::
 
     git clone https://github.com/Naohiro2g/luma.examples.git
     cd luma.examples/examples
-
+    
     # misaki font
     python3 crawl-misaki.py --interface spi
     # moving cube in 3D
