@@ -85,6 +85,22 @@ Orange  11    8     Purple
 ======= ===== ===== =======
 
 
+
+I2C connection
+^^^^^^^^^^^^^^
+
+========== ====== ============ ====================
+OLED Pin   Name   Remarks      RPi Function
+========== ====== ============ ====================
+4 Yellow   SDA    Data         GPIO 2 (SDA)
+3 Orange   SCL    Clock        GPIO 3 (SCL)
+2 Red      VCC    +3.3V Power  3V3
+1 Brown    GND    Ground       GND
+========== ====== ============ ====================
+
+
+
+
 Original README
 ^^^^^^^^^^^^^^^
 
