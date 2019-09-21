@@ -36,7 +36,8 @@ Test drive from luma.examples
     cd luma.examples/examples
 
     # misaki font
-    python3 crawl-misaki.py --interface spi
+    python3 crawl-misaki.py --interface spi  # for SPI connection
+    python3 crawl-misaki.py                  # for I2C connection
 
     # moving cube in 3D
     python3 3d_box.py --interface spi
